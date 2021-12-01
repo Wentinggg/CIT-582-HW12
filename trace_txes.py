@@ -51,5 +51,5 @@ class TXO:
         # YOUR CODE HERE
         i = 0
         while i < d:
-            self.get_inputs(self, i)
+            self.get_inputs(self.inputs[i], i)
             i += 1

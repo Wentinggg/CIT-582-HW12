@@ -52,8 +52,9 @@ class TXO:
 
     def get_inputs(self, d=1):
         # YOUR CODE HERE
-        self.get_inputs(self.inputs[d], d)
-        if d > 1:
-            d -= 1
-            self.get_inputs(self.inputs[d], d)
-        return self
+        pass
+#         self.get_inputs(self.inputs[d], d)
+#         if d > 1:
+#             d -= 1
+#             self.get_inputs(self.inputs[d], d)
+#         return self

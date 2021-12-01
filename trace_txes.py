@@ -49,7 +49,7 @@ class TXO:
 
     def get_inputs(self, d=1):
         # YOUR CODE HERE
-        i = 0
-        while i < d:
-            self.get_inputs(self.inputs[i], i)
-            i += 1
+        self.get_inputs(self.inputs[d], d)
+        if d > 1:
+            d -= 1
+            self.get_inputs(self.inputs[d], d)

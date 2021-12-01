@@ -56,3 +56,4 @@ class TXO:
         if d > 1:
             d -= 1
             self.get_inputs(self.inputs[d], d)
+        return self

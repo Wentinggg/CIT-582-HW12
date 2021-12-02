@@ -56,7 +56,7 @@ class TXO:
         vin = tx[9]
         for v in vin:
             TXO.from_tx_hash(v[0])
-        if d > 1:
+        if d > 0:
             for input in self.inputs:
                 d -= 1
                 TXO.get_inputs(input, d)
